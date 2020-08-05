@@ -7,12 +7,12 @@
 const IPCIDR = require('ip-cidr');
 
 /**
- * Calculate and return the first host IP address from a CIDR.
+ * Calculate and return the first host IP address (ipv4 and ipv6) from a CIDR subnet.
 							   
  * @param {string} cidrStr - The IPv4 subnet expressed
  *                 in CIDR format.
  * @param {callback} callback - A callback function.
- * @return {string} (firstIpAddress) - An IPv4 address which is mapped to IPv6 address.
+ * @return {string} (firstIpAddress) - An IPv4 address and its mapped IPv6 address.
 										 
  */
 function getFirstIpAddress(cidrStr, callback) {
